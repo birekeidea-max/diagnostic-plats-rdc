@@ -40,7 +40,7 @@ uploaded_file = st.file_uploader("Choisissez une photo de plat...", type=["jpg",
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption="Aperçu de l'image", use_column_width=True)
+    st.image(image, caption="Aperçu de l'image", use_container_width=True)
     
     if st.button("Diagnostiquer le plat", type="primary"):
         if not api_key:
