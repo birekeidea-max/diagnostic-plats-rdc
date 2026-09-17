@@ -48,8 +48,8 @@ if uploaded_file is not None:
             Sois précis et réponds en français.
             """
 
-            # Utilisation directe du modèle officiel gemini-3.6-flash
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={api_key}"
+            # Utilisation du modèle gemini-2.5-flash
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
 
             payload = {
                 "contents": [{
